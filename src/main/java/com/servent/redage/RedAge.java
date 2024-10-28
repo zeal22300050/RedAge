@@ -1,6 +1,7 @@
 package com.servent.redage;
 
 import com.mojang.logging.LogUtils;
+import com.servent.redage.item.RedAgeItems;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -24,6 +25,9 @@ public class RedAge
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         modEventBus.addListener(this::commonSetup);
+
+        // アイテムをイベントバスに登録
+        RedAgeItems.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
