@@ -41,6 +41,7 @@ public class RedAge {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(RedAgeItems.RAW_ZINC);
+            event.accept(RedAgeItems.ZINC_INGOT);
         }
     }
 
