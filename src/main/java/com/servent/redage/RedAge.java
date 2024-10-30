@@ -1,6 +1,7 @@
 package com.servent.redage;
 
 import com.mojang.logging.LogUtils;
+import com.servent.redage.block.RedAgeBlocks;
 import com.servent.redage.item.RedAgeItems;
 import com.servent.redage.item.RedAgeTabs;
 import net.minecraft.world.item.CreativeModeTab;
@@ -31,6 +32,8 @@ public class RedAge {
         RedAgeItems.register(modEventBus);
         // クリエイティブタブをバスに登録
         RedAgeTabs.register(modEventBus);
+        // ブロックをバスに追加
+        RedAgeBlocks.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 
