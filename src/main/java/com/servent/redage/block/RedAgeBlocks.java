@@ -20,6 +20,9 @@ public class RedAgeBlocks {
     public static final RegistryObject<Block> ZINC_BLOCK = registerBlockItem("zinc_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.ANVIL)));
 
+    public static final RegistryObject<Block> RAW_ZINC_BLOCK = registerBlockItem("raw_zinc_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK).sound(SoundType.STONE)));
+
     private static <T extends Block> RegistryObject<T> registerBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> block = BLOCKS.register(name, supplier);
         RedAgeItems.ITEMS.register(name,

@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "" : {
+      "model": "redage:block/raw_zinc_block"
+    }
+  }
+}

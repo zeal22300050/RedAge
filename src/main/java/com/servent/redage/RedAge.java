@@ -49,6 +49,7 @@ public class RedAge {
             event.accept(RedAgeItems.RAW_ZINC);
             event.accept(RedAgeItems.ZINC_INGOT);
             event.accept(RedAgeBlocks.ZINC_BLOCK);
+            event.accept(RedAgeBlocks.RAW_ZINC_BLOCK);
         }
     }
 
