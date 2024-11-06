@@ -20,5 +20,9 @@ public class RedAgeDataGenerators {
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
 
         generator.addProvider(event.includeClient(), new RedAgeItemModelProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new RedAgeBlockStateProvider(packOutput, existingFileHelper));
+        generator.addProvider(event.includeClient(), new ENUSLanguageProvider(packOutput));
+        generator.addProvider(event.includeClient(), new JAJPLanguageProvider(packOutput));
+
     }
 }
