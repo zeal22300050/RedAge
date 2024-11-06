@@ -1,14 +1,10 @@
-package com.servent.redage.datagen;
+package com.servent.redage.datagen.server;
 
-import com.servent.redage.RedAge;
 import com.servent.redage.block.RedAgeBlocks;
 import com.servent.redage.item.RedAgeItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.ItemLike;
-
-import javax.annotation.Nullable;
 
 public class RedAgeRecipeProvider extends RecipeProvider {
     public RedAgeRecipeProvider(PackOutput pOutput) {

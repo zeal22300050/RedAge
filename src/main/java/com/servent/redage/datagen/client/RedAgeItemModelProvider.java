@@ -1,4 +1,4 @@
-package com.servent.redage.datagen;
+package com.servent.redage.datagen.client;
 
 import com.servent.redage.RedAge;
 import com.servent.redage.item.RedAgeItems;
