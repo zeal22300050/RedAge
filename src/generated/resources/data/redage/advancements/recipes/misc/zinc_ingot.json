@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "redage:zinc_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zinc_block": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "redage:zinc_block"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_zinc_block"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "redage:zinc_ingot"
+    ]
+  },
+  "sends_telemetry_event": false
+}

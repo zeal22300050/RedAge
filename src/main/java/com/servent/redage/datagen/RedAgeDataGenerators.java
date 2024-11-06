@@ -24,5 +24,6 @@ public class RedAgeDataGenerators {
         generator.addProvider(event.includeClient(), new ENUSLanguageProvider(packOutput));
         generator.addProvider(event.includeClient(), new JAJPLanguageProvider(packOutput));
 
+        generator.addProvider(event.includeServer(), new RedAgeRecipeProvider(packOutput));
     }
 }

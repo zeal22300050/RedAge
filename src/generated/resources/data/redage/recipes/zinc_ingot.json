@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "redage:zinc_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "redage:zinc_ingot"
+  }
+}
