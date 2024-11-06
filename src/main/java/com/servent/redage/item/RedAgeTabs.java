@@ -1,6 +1,7 @@
 package com.servent.redage.item;
 
 import com.servent.redage.RedAge;
+import com.servent.redage.block.RedAgeBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -18,6 +19,7 @@ public class RedAgeTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(RedAgeItems.RAW_ZINC.get());
                         output.accept(RedAgeItems.ZINC_INGOT.get());
+                        output.accept(RedAgeBlocks.ZINC_BLOCK.get());
                     })
                     .build());
 
