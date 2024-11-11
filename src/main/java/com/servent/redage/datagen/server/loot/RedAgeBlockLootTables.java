@@ -21,6 +21,6 @@ public class RedAgeBlockLootTables extends BlockLootSubProvider {
 
     @Override
     protected Iterable<Block> getKnownBlocks() {
-        return RedAgeBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator; // 動画 4:36からスタート
+        return RedAgeBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
     }
 }
