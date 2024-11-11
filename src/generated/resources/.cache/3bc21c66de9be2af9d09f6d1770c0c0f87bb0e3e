@@ -1,0 +1,5 @@
+// 1.20.2	2024-11-11T14:49:38.3333116	Global Loot Modifiers : redage
+4ecac8cfef24c0cb5eca382d7ca7b662c204d7bd data/forge/loot_modifiers/global_loot_modifiers.json
+36f7e6b64fc5d9ce82bae937a97cb7ca4dc78a44 data/redage/loot_modifiers/zinc_ingot_from_ruined_portal.json
+11bec15ab391f15efa5e2f3a41bf80573489814f data/redage/loot_modifiers/zinc_ingot_from_sniffer_digging.json
+eec4a3b9ed8352313ed9392c5b95342d244895c6 data/redage/loot_modifiers/zinc_ingot_from_zombie.json

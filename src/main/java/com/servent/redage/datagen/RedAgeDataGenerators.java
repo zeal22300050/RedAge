@@ -6,6 +6,7 @@ import com.servent.redage.datagen.client.JAJPLanguageProvider;
 import com.servent.redage.datagen.client.RedAgeBlockStateProvider;
 import com.servent.redage.datagen.client.RedAgeItemModelProvider;
 import com.servent.redage.datagen.server.RedAgeBlockTagsProvider;
+import com.servent.redage.datagen.server.RedAgeGlobalLootModifierProvider;
 import com.servent.redage.datagen.server.RedAgeRecipeProvider;
 import com.servent.redage.datagen.server.loot.RedAgeLootTables;
 import net.minecraft.core.HolderLookup;
@@ -44,5 +45,8 @@ public class RedAgeDataGenerators {
 
         // タグ
         generator.addProvider(event.includeServer(), new RedAgeBlockTagsProvider(packOutput, lookUpProvider, existingFileHelper));
+
+        // GlobalLootModifier
+        generator.addProvider(event.includeServer(), new RedAgeGlobalLootModifierProvider(packOutput));
     }
 }

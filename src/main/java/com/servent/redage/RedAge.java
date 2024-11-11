@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import com.servent.redage.block.RedAgeBlocks;
 import com.servent.redage.item.RedAgeItems;
 import com.servent.redage.item.RedAgeTabs;
+import com.servent.redage.loot.RedAgeLootModifiers;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,6 +35,8 @@ public class RedAge {
         RedAgeTabs.register(modEventBus);
         // ブロックをバスに追加
         RedAgeBlocks.register(modEventBus);
+        // GlobalLootModifierを登録
+        RedAgeLootModifiers.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 

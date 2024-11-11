@@ -1,0 +1,8 @@
+{
+  "entries": [
+    "redage:zinc_ingot_from_zombie",
+    "redage:zinc_ingot_from_sniffer_digging",
+    "redage:zinc_ingot_from_ruined_portal"
+  ],
+  "replace": false
+}
