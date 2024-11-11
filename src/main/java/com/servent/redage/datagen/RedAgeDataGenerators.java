@@ -5,14 +5,18 @@ import com.servent.redage.datagen.client.ENUSLanguageProvider;
 import com.servent.redage.datagen.client.JAJPLanguageProvider;
 import com.servent.redage.datagen.client.RedAgeBlockStateProvider;
 import com.servent.redage.datagen.client.RedAgeItemModelProvider;
+import com.servent.redage.datagen.server.RedAgeBlockTagsProvider;
 import com.servent.redage.datagen.server.RedAgeRecipeProvider;
 import com.servent.redage.datagen.server.loot.RedAgeLootTables;
+import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+
+import java.util.concurrent.CompletableFuture;
 
 @Mod.EventBusSubscriber(modid = RedAge.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class RedAgeDataGenerators {
@@ -22,6 +26,7 @@ public class RedAgeDataGenerators {
         DataGenerator generator = event.getGenerator();
         PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
+        CompletableFuture<HolderLookup.Provider> lookUpProvider = event.getLookupProvider();
 
         // アイテムのモデルファイル
         generator.addProvider(event.includeClient(), new RedAgeItemModelProvider(packOutput, existingFileHelper));
@@ -36,5 +41,8 @@ public class RedAgeDataGenerators {
 
         // ルートテーブル
         generator.addProvider(event.includeServer(), RedAgeLootTables.create(packOutput));
+
+        // タグ
+        generator.addProvider(event.includeServer(), new RedAgeBlockTagsProvider(packOutput, lookUpProvider, existingFileHelper));
     }
 }
