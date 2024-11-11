@@ -1,5 +1,6 @@
-// 1.20.2	2024-11-11T14:49:38.3333116	Global Loot Modifiers : redage
-4ecac8cfef24c0cb5eca382d7ca7b662c204d7bd data/forge/loot_modifiers/global_loot_modifiers.json
+// 1.20.2	2024-11-11T15:30:34.6094229	Global Loot Modifiers : redage
+1dcf52434bb2891559759517024433873d4e8c8a data/forge/loot_modifiers/global_loot_modifiers.json
 36f7e6b64fc5d9ce82bae937a97cb7ca4dc78a44 data/redage/loot_modifiers/zinc_ingot_from_ruined_portal.json
-11bec15ab391f15efa5e2f3a41bf80573489814f data/redage/loot_modifiers/zinc_ingot_from_sniffer_digging.json
+c364d024ffbd323f0f4ad97c9ae3738cd7b12489 data/redage/loot_modifiers/zinc_ingot_from_sniffer_digging.json
+77df3b836cf651ff2c2e98cadd527cc605ed42e5 data/redage/loot_modifiers/zinc_ingot_from_sus_sand.json
 eec4a3b9ed8352313ed9392c5b95342d244895c6 data/redage/loot_modifiers/zinc_ingot_from_zombie.json

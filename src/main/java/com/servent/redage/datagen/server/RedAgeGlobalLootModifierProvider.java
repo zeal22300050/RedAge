@@ -3,6 +3,7 @@ package com.servent.redage.datagen.server;
 import com.servent.redage.RedAge;
 import com.servent.redage.item.RedAgeItems;
 import com.servent.redage.loot.AddItemModifier;
+import com.servent.redage.loot.ReplaceItemModifier;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
@@ -29,8 +30,13 @@ public class RedAgeGlobalLootModifierProvider extends GlobalLootModifierProvider
         }, RedAgeItems.ZINC_INGOT.get()));
 
         // スニッファーの掘り出し物
-        add("zinc_ingot_from_sniffer_digging", new AddItemModifier(new LootItemCondition[]{
+        add("zinc_ingot_from_sniffer_digging", new ReplaceItemModifier(new LootItemCondition[]{
                 new LootTableIdCondition.Builder(new ResourceLocation("gameplay/sniffer_digging")).build()
-        }, RedAgeItems.ZINC_INGOT.get()));
+        }, RedAgeItems.ZINC_INGOT.get(), 0.5f));
+
+        // 怪しげな砂
+        add("zinc_ingot_from_sus_sand", new ReplaceItemModifier(new LootItemCondition[]{
+                new LootTableIdCondition.Builder(new ResourceLocation("archaeology/desert_pyramid")).build()
+        }, RedAgeItems.ZINC_INGOT.get(), 0.5f));
     }
 }
