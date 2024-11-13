@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 1.0,
+  "group": "zinc",
+  "ingredient": {
+    "item": "redage:zinc_ore"
+  },
+  "result": "redage:zinc_ingot"
+}
