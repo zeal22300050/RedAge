@@ -19,6 +19,8 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addItem(RedAgeItems.ZINC_INGOT, "亜鉛インゴット");
         addBlock(RedAgeBlocks.RAW_ZINC_BLOCK, "亜鉛原石ブロック");
         addBlock(RedAgeBlocks.ZINC_BLOCK, "亜鉛ブロック");
+        addBlock(RedAgeBlocks.ZINC_ORE, "亜鉛鉱石");
+        addBlock(RedAgeBlocks.DEEPSLATE_ZINC_ORE, "深層亜鉛鉱石");
         add("creativetabs.redage_tab", "RedAge");
     }
 }

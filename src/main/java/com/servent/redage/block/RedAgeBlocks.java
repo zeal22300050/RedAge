@@ -17,11 +17,18 @@ import java.util.function.Supplier;
 
 public class RedAgeBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, RedAge.MOD_ID);
+
     public static final RegistryObject<Block> ZINC_BLOCK = registerBlockItem("zinc_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).sound(SoundType.ANVIL)));
 
     public static final RegistryObject<Block> RAW_ZINC_BLOCK = registerBlockItem("raw_zinc_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK).sound(SoundType.STONE).noLootTable()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.RAW_COPPER_BLOCK).sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> ZINC_ORE = registerBlockItem("zinc_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE)));
+
+    public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = registerBlockItem("deepslate_zinc_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
 
     private static <T extends Block> RegistryObject<T> registerBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> block = BLOCKS.register(name, supplier);

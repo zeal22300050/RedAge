@@ -21,6 +21,8 @@ public class RedAgeTabs {
                         output.accept(RedAgeItems.ZINC_INGOT.get());
                         output.accept(RedAgeBlocks.ZINC_BLOCK.get());
                         output.accept(RedAgeBlocks.RAW_ZINC_BLOCK.get());
+                        output.accept(RedAgeBlocks.ZINC_ORE.get());
+                        output.accept(RedAgeBlocks.DEEPSLATE_ZINC_ORE.get());
                     })
                     .build());
 

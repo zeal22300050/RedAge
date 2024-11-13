@@ -20,9 +20,15 @@ public class RedAgeBlockTagsProvider extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         // 採掘可能ツール設定
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(RedAgeBlocks.ZINC_BLOCK.get(), RedAgeBlocks.RAW_ZINC_BLOCK.get());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(RedAgeBlocks.ZINC_BLOCK.get(),
+                RedAgeBlocks.RAW_ZINC_BLOCK.get(),
+                RedAgeBlocks.ZINC_ORE.get(),
+                RedAgeBlocks.DEEPSLATE_ZINC_ORE.get());
 
         // ツールレベル設定
-        this.tag(BlockTags.NEEDS_IRON_TOOL).add(RedAgeBlocks.ZINC_BLOCK.get(), RedAgeBlocks.RAW_ZINC_BLOCK.get());
+        this.tag(BlockTags.NEEDS_IRON_TOOL).add(RedAgeBlocks.ZINC_BLOCK.get(),
+                RedAgeBlocks.RAW_ZINC_BLOCK.get(),
+                RedAgeBlocks.ZINC_ORE.get(),
+                RedAgeBlocks.DEEPSLATE_ZINC_ORE.get());
     }
 }

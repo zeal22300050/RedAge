@@ -1,2 +1,5 @@
-// 1.20.2	2024-11-11T13:36:12.8682646	Loot Tables
+// 1.20.2	2024-11-13T15:01:57.8704396	Loot Tables
+b0f53d5543332d70dcd7a4582f653f2fc9244a9c data/redage/loot_tables/blocks/deepslate_zinc_ore.json
+8cca955d34158fab0fa4f6b7dc532b0b97bdf600 data/redage/loot_tables/blocks/raw_zinc_block.json
 f53adbc6c5d4cd15210488d8954844f6f42c54c5 data/redage/loot_tables/blocks/zinc_block.json
+419c5a57539e992551743a150103ce08eb542149 data/redage/loot_tables/blocks/zinc_ore.json

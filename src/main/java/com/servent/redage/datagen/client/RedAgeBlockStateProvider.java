@@ -17,6 +17,8 @@ public class RedAgeBlockStateProvider extends BlockStateProvider {
     protected void registerStatesAndModels() {
         simpleBlockWithItem(RedAgeBlocks.ZINC_BLOCK);
         simpleBlockWithItem(RedAgeBlocks.RAW_ZINC_BLOCK);
+        simpleBlockWithItem(RedAgeBlocks.ZINC_ORE);
+        simpleBlockWithItem(RedAgeBlocks.DEEPSLATE_ZINC_ORE);
     }
 
     private void simpleBlockWithItem(RegistryObject<Block> block) {

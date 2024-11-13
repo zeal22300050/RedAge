@@ -1,6 +1,8 @@
 {
   "values": [
     "redage:zinc_block",
-    "redage:raw_zinc_block"
+    "redage:raw_zinc_block",
+    "redage:zinc_ore",
+    "redage:deepslate_zinc_ore"
   ]
 }

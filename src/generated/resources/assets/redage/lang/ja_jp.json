@@ -1,6 +1,8 @@
 {
+  "block.redage.deepslate_zinc_ore": "深層亜鉛鉱石",
   "block.redage.raw_zinc_block": "亜鉛原石ブロック",
   "block.redage.zinc_block": "亜鉛ブロック",
+  "block.redage.zinc_ore": "亜鉛鉱石",
   "creativetabs.redage_tab": "RedAge",
   "item.redage.raw_zinc": "亜鉛原石",
   "item.redage.zinc_ingot": "亜鉛インゴット"
