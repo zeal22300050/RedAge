@@ -8,6 +8,7 @@ import com.servent.redage.datagen.client.RedAgeItemModelProvider;
 import com.servent.redage.datagen.server.RedAgeBlockTagsProvider;
 import com.servent.redage.datagen.server.RedAgeGlobalLootModifierProvider;
 import com.servent.redage.datagen.server.RedAgeRecipeProvider;
+import com.servent.redage.datagen.server.RedAgeWorldGenProvider;
 import com.servent.redage.datagen.server.loot.RedAgeLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -48,5 +49,8 @@ public class RedAgeDataGenerators {
 
         // GlobalLootModifier
         generator.addProvider(event.includeServer(), new RedAgeGlobalLootModifierProvider(packOutput));
+
+        // WorldGen
+        generator.addProvider(event.includeServer(), new RedAgeWorldGenProvider(packOutput, lookUpProvider));
     }
 }
