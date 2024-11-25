@@ -1,6 +1,11 @@
 {
   "block.redage.deepslate_zinc_ore": "深層亜鉛鉱石",
   "block.redage.raw_zinc_block": "亜鉛原石ブロック",
+  "block.redage.red_leaves": "紅の葉",
+  "block.redage.red_log": "紅の原木",
+  "block.redage.red_wood": "紅の木",
+  "block.redage.stripped_red_log": "樹皮を剥いだ紅の原木",
+  "block.redage.stripped_red_wood": "樹皮を剥いだ紅の木",
   "block.redage.zinc_block": "亜鉛ブロック",
   "block.redage.zinc_ore": "亜鉛鉱石",
   "creativetabs.redage_tab": "RedAge",

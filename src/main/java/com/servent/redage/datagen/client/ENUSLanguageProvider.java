@@ -21,6 +21,11 @@ public class ENUSLanguageProvider extends LanguageProvider {
         addBlock(RedAgeBlocks.ZINC_BLOCK, "Zinc Block");
         addBlock(RedAgeBlocks.ZINC_ORE, "Zinc Ore");
         addBlock(RedAgeBlocks.DEEPSLATE_ZINC_ORE, "Deepslate Zinc Ore");
+        addBlock(RedAgeBlocks.STRIPPED_RED_LOG, "Stripped Red Log");
+        addBlock(RedAgeBlocks.STRIPPED_RED_WOOD, "Stripped Red Wood");
+        addBlock(RedAgeBlocks.RED_LOG, "Red Log");
+        addBlock(RedAgeBlocks.RED_WOOD, "Red Wood");
+        addBlock(RedAgeBlocks.RED_LEAVES, "Red Leaves");
         add("creativetabs.redage_tab", "RedAge");
     }
 }

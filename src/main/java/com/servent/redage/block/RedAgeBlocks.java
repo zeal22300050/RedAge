@@ -1,6 +1,8 @@
 package com.servent.redage.block;
 
 import com.servent.redage.RedAge;
+import com.servent.redage.block.custom.RedAgeLeavesBlock;
+import com.servent.redage.block.custom.RedAgeLogBLock;
 import com.servent.redage.item.RedAgeItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -29,6 +31,21 @@ public class RedAgeBlocks {
 
     public static final RegistryObject<Block> DEEPSLATE_ZINC_ORE = registerBlockItem("deepslate_zinc_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_DIAMOND_ORE)));
+
+    public static final RegistryObject<Block> STRIPPED_RED_LOG = registerBlockItem("stripped_red_log",
+            () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_LOG)));
+
+    public static final RegistryObject<Block> STRIPPED_RED_WOOD = registerBlockItem("stripped_red_wood",
+            () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
+
+    public static final RegistryObject<Block> RED_LOG = registerBlockItem("red_log",
+            () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+
+    public static final RegistryObject<Block> RED_WOOD = registerBlockItem("red_wood",
+            () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+
+    public static final RegistryObject<Block> RED_LEAVES = registerBlockItem("red_leaves",
+            () -> new RedAgeLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
 
     private static <T extends Block> RegistryObject<T> registerBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> block = BLOCKS.register(name, supplier);

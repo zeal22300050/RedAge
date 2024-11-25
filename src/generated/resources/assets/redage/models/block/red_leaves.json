@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_top",
+  "textures": {
+    "side": "redage:block/red_leaves_side",
+    "top": "redage:block/red_leaves_top"
+  }
+}

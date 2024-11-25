@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "redage:block/red_log",
+    "side": "redage:block/red_log"
+  }
+}

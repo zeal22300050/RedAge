@@ -1,5 +1,10 @@
-// 1.20.2	2024-11-13T15:01:57.8704396	Loot Tables
+// 1.20.2	2024-11-25T14:59:35.457872	Loot Tables
 b0f53d5543332d70dcd7a4582f653f2fc9244a9c data/redage/loot_tables/blocks/deepslate_zinc_ore.json
 8cca955d34158fab0fa4f6b7dc532b0b97bdf600 data/redage/loot_tables/blocks/raw_zinc_block.json
+704afd8a6a051515d20759ffb89e08fa1d948a1e data/redage/loot_tables/blocks/red_leaves.json
+9707aaea6402118d2756b8363dfe8a9ac2708782 data/redage/loot_tables/blocks/red_log.json
+2f55be3b0db766b61c22d955b10c321577a95749 data/redage/loot_tables/blocks/red_wood.json
+2bceec79368dbfa6d6655edb116677194005f2ad data/redage/loot_tables/blocks/stripped_red_log.json
+77dd3c10e2b9238db0be01730f745edd460354b7 data/redage/loot_tables/blocks/stripped_red_wood.json
 f53adbc6c5d4cd15210488d8954844f6f42c54c5 data/redage/loot_tables/blocks/zinc_block.json
 419c5a57539e992551743a150103ce08eb542149 data/redage/loot_tables/blocks/zinc_ore.json

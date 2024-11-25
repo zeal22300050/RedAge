@@ -1,5 +1,7 @@
-// 1.20.2	2024-11-13T16:00:41.7532182	Recipes
+// 1.20.2	2024-11-25T14:59:35.457872	Recipes
 06dc2dd7105bd5afc372053cb598f5bd7b965585 data/redage/advancements/recipes/building_blocks/raw_zinc_block.json
+1d1e89d470d2ea8c1e4b9a99ea703483fa7b1d2b data/redage/advancements/recipes/building_blocks/red_wood.json
+a8f0c124b4df5546ac83679905005361a2de81f5 data/redage/advancements/recipes/building_blocks/stripped_red_wood.json
 7a32013a6ed4dbd69e06524bdce194dea5933a0c data/redage/advancements/recipes/building_blocks/zinc_block.json
 30efe52a9484bbca810589ad64de329499381d3e data/redage/advancements/recipes/misc/raw_zinc.json
 409ba250cecc4213d9f95cde956a5aadfdb5fe8a data/redage/advancements/recipes/misc/zinc_ingot.json
@@ -11,6 +13,8 @@
 3ac59f067f17ae8ce5a87edb059d56741019c3b8 data/redage/advancements/recipes/misc/zinc_ingot_from_smelting_zinc_ore.json
 5f0fb9866c987e76bf47b810a628f6e66f053ce7 data/redage/recipes/raw_zinc.json
 c1a991fa9ce27f62ee85f7fe0e4e1c3f20b0264a data/redage/recipes/raw_zinc_block.json
+6c99e349fbc4ffb171624b6496f142c2717a548d data/redage/recipes/red_wood.json
+d707cf49814d69219290646851b25fb656dd9270 data/redage/recipes/stripped_red_wood.json
 0bb1f6158806a1f15a78f45479cca0f4b40b6530 data/redage/recipes/zinc_block.json
 8931c69da4e1e6fbc2e45a63155f9e4febdffaf6 data/redage/recipes/zinc_ingot.json
 40332ed5bbd08def9770aacc9288388e447f60cb data/redage/recipes/zinc_ingot_from_blasting_deepslate_zinc_ore.json

@@ -23,6 +23,11 @@ public class RedAgeTabs {
                         output.accept(RedAgeBlocks.RAW_ZINC_BLOCK.get());
                         output.accept(RedAgeBlocks.ZINC_ORE.get());
                         output.accept(RedAgeBlocks.DEEPSLATE_ZINC_ORE.get());
+                        output.accept(RedAgeBlocks.STRIPPED_RED_LOG.get());
+                        output.accept(RedAgeBlocks.STRIPPED_RED_WOOD.get());
+                        output.accept(RedAgeBlocks.RED_WOOD.get());
+                        output.accept(RedAgeBlocks.RED_LOG.get());
+                        output.accept(RedAgeBlocks.RED_LEAVES.get());
                     })
                     .build());
 

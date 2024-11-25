@@ -1,6 +1,11 @@
 {
   "block.redage.deepslate_zinc_ore": "Deepslate Zinc Ore",
   "block.redage.raw_zinc_block": "Raw Zinc Block",
+  "block.redage.red_leaves": "Red Leaves",
+  "block.redage.red_log": "Red Log",
+  "block.redage.red_wood": "Red Wood",
+  "block.redage.stripped_red_log": "Stripped Red Log",
+  "block.redage.stripped_red_wood": "Stripped Red Wood",
   "block.redage.zinc_block": "Zinc Block",
   "block.redage.zinc_ore": "Zinc Ore",
   "creativetabs.redage_tab": "RedAge",

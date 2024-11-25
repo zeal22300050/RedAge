@@ -29,6 +29,9 @@ public class RedAgeRecipeProvider extends RecipeProvider {
 
         oreSmelting(pRecipeOutput, ZINC_SMELTABLE, RecipeCategory.MISC, RedAgeItems.ZINC_INGOT.get(), 1.0f, 200, "zinc");
         oreBlasting(pRecipeOutput, ZINC_SMELTABLE, RecipeCategory.MISC, RedAgeItems.ZINC_INGOT.get(), 1.0f, 100, "zinc");
+
+        woodFromLogs(pRecipeOutput, RedAgeBlocks.RED_WOOD.get(), RedAgeBlocks.RED_LOG.get());
+        woodFromLogs(pRecipeOutput, RedAgeBlocks.STRIPPED_RED_WOOD.get(), RedAgeBlocks.STRIPPED_RED_LOG.get());
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {

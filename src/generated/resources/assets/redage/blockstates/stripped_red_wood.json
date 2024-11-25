@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "redage:block/stripped_red_wood_horizontal",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "redage:block/stripped_red_wood"
+    },
+    "axis=z": {
+      "model": "redage:block/stripped_red_wood_horizontal",
+      "x": 90
+    }
+  }
+}
