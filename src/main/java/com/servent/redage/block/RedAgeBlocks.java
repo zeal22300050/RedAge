@@ -3,6 +3,7 @@ package com.servent.redage.block;
 import com.servent.redage.RedAge;
 import com.servent.redage.block.custom.RedAgeLeavesBlock;
 import com.servent.redage.block.custom.RedAgeLogBLock;
+import com.servent.redage.block.custom.RedAgeStrippableLogBlock;
 import com.servent.redage.item.RedAgeItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -39,10 +40,10 @@ public class RedAgeBlocks {
             () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.STRIPPED_OAK_WOOD)));
 
     public static final RegistryObject<Block> RED_LOG = registerBlockItem("red_log",
-            () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
+            () -> new RedAgeStrippableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG), STRIPPED_RED_LOG));
 
     public static final RegistryObject<Block> RED_WOOD = registerBlockItem("red_wood",
-            () -> new RedAgeLogBLock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD)));
+            () -> new RedAgeStrippableLogBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WOOD), STRIPPED_RED_WOOD));
 
     public static final RegistryObject<Block> RED_LEAVES = registerBlockItem("red_leaves",
             () -> new RedAgeLeavesBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)));
