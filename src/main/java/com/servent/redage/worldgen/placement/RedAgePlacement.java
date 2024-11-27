@@ -1,10 +1,8 @@
 package com.servent.redage.worldgen.placement;
 
 import com.servent.redage.RedAge;
-import com.servent.redage.block.RedAgeBlocks;
-import com.servent.redage.worldgen.features.RedAgeOreFeatures;
+import com.servent.redage.worldgen.features.RedAgeFeatures;
 import net.minecraft.core.HolderGetter;
-import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
@@ -16,12 +14,12 @@ import net.minecraft.world.level.levelgen.placement.*;
 
 import java.util.List;
 
-public class RedAgeOrePlacement {
+public class RedAgePlacement {
     public static final ResourceKey<PlacedFeature> ORE_ZINC = createKey("ore_zinc");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
-        PlacementUtils.register(context, ORE_ZINC, configuredFeatures.getOrThrow(RedAgeOreFeatures.ZINC_ORE_KEY),
+        PlacementUtils.register(context, ORE_ZINC, configuredFeatures.getOrThrow(RedAgeFeatures.ZINC_ORE_KEY),
                 commonOrePlacement(90, HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(112))));
     }
 

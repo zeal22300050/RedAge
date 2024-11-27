@@ -1,7 +1,7 @@
 package com.servent.redage.worldgen.biome;
 
 import com.servent.redage.RedAge;
-import com.servent.redage.worldgen.placement.RedAgeOrePlacement;
+import com.servent.redage.worldgen.placement.RedAgePlacement;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.HolderSet;
 import net.minecraft.core.registries.Registries;
@@ -25,7 +25,7 @@ public class RedAgeBiomeModifiers {
 
         context.register(ADD_ZINC_ORE,
                 new ForgeBiomeModifiers.AddFeaturesBiomeModifier(biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                        HolderSet.direct(placedFeatures.getOrThrow(RedAgeOrePlacement.ORE_ZINC)),
+                        HolderSet.direct(placedFeatures.getOrThrow(RedAgePlacement.ORE_ZINC)),
                         GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 
