@@ -1,14 +1,15 @@
-// 1.20.2	2024-11-27T14:54:59.0876336	Loot Tables
+// 1.20.2	2024-11-27T15:43:17.8913631	Loot Tables
 b0f53d5543332d70dcd7a4582f653f2fc9244a9c data/redage/loot_tables/blocks/deepslate_zinc_ore.json
 8cca955d34158fab0fa4f6b7dc532b0b97bdf600 data/redage/loot_tables/blocks/raw_zinc_block.json
 1fc868c965b8d354a0ad307033486cd8d14303dd data/redage/loot_tables/blocks/red_button.json
 615490ad76dd533ecdf5148716382a1e692f1725 data/redage/loot_tables/blocks/red_door.json
 4fb3b86438db92336b9b494b19a001cbbc52262a data/redage/loot_tables/blocks/red_fence.json
 d0352f7c7fcc9cff3a924dda9c31426161bccd7b data/redage/loot_tables/blocks/red_fence_gate.json
-704afd8a6a051515d20759ffb89e08fa1d948a1e data/redage/loot_tables/blocks/red_leaves.json
+46553385b30a2c8baef520864558200bd863132e data/redage/loot_tables/blocks/red_leaves.json
 9707aaea6402118d2756b8363dfe8a9ac2708782 data/redage/loot_tables/blocks/red_log.json
 afb0fda274b329aff1bb004a63bcee0c0f5c1877 data/redage/loot_tables/blocks/red_planks.json
 588abdd0adb0cb27e81043099b1e7dc4039eb923 data/redage/loot_tables/blocks/red_pressure_plate.json
+c45ac5af91c600a0054b38f123848f8f1130f872 data/redage/loot_tables/blocks/red_sapling.json
 9c933f2950fb08494b999f6539c01708782f9086 data/redage/loot_tables/blocks/red_slab.json
 ea28cd1c8c3ab201acda577b7f34042975558d4a data/redage/loot_tables/blocks/red_stairs.json
 c41668f2401a93f769ad6d8949108e7abe75613f data/redage/loot_tables/blocks/red_trapdoor.json

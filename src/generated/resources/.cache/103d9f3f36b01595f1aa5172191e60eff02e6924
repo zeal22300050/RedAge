@@ -1,4 +1,5 @@
-// 1.20.2	2024-11-20T15:07:50.378457	Registries
+// 1.20.2	2024-11-27T15:43:17.8929455	Registries
 6c0f415ec7a5bbde30d9728c96a855066141b19d data/redage/forge/biome_modifier/add_zinc_ore.json
+cc8bf155e600e8fc80b961531edff8d7aab25955 data/redage/worldgen/configured_feature/red_tree.json
 7efb56c9ba2bfd8ad69b92e28dc987e6e56d8868 data/redage/worldgen/configured_feature/zinc_ore.json
 21a146bacdff45d919db8390e9f7b02475377084 data/redage/worldgen/placed_feature/ore_zinc.json
