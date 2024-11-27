@@ -37,6 +37,7 @@ public class RedAgeBlockStateProvider extends BlockStateProvider {
         item(RedAgeBlocks.STRIPPED_RED_LOG);
         item(RedAgeBlocks.STRIPPED_RED_WOOD);
         redLeaves(RedAgeBlocks.RED_LEAVES);
+        sapling(RedAgeBlocks.RED_SAPLING);
 
         simpleBlockWithItem(RedAgeBlocks.RED_PLANKS);
         slabBlock((SlabBlock) RedAgeBlocks.RED_SLAB.get(), blockTexture(RedAgeBlocks.RED_PLANKS.get()), blockTexture(RedAgeBlocks.RED_PLANKS.get()));
@@ -75,5 +76,11 @@ public class RedAgeBlockStateProvider extends BlockStateProvider {
         simpleBlockWithItem(block.get(), models().singleTexture(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 new ResourceLocation("minecraft:block/leaves"),
                 "all", blockTexture(block.get())).renderType("cutout"));
+    }
+
+    private void sapling(RegistryObject<Block> blockRegistryObject) {
+        simpleBlock(blockRegistryObject.get(),
+                models().cross(ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath(),
+                        blockTexture(blockRegistryObject.get())).renderType("cutout"));
     }
 }

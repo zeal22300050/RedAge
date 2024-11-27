@@ -31,6 +31,7 @@ public class RedAgeItemModelProvider extends ItemModelProvider {
         trapdoor(RedAgeBlocks.RED_TRAPDOOR);
         fence(RedAgeBlocks.RED_FENCE, RedAgeBlocks.RED_PLANKS);
         button(RedAgeBlocks.RED_BUTTON, RedAgeBlocks.RED_PLANKS);
+        sapling(RedAgeBlocks.RED_SAPLING);
     }
 
     public void itemWithBlock(RegistryObject<Block> block) {
@@ -55,4 +56,11 @@ public class RedAgeItemModelProvider extends ItemModelProvider {
                 .texture("texture",  new ResourceLocation(RedAge.MOD_ID,
                         "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
+
+    private void sapling(RegistryObject<Block> block) {
+        this.withExistingParent(block.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(RedAge.MOD_ID,"block/" + block.getId().getPath()));
+    }
+
 }
