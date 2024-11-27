@@ -26,6 +26,7 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addBlock(RedAgeBlocks.RED_LOG, "紅の原木");
         addBlock(RedAgeBlocks.RED_WOOD, "紅の木");
         addBlock(RedAgeBlocks.RED_LEAVES, "紅の葉");
+        addBlock(RedAgeBlocks.RED_SAPLING, "紅の苗木");
 
         addBlock(RedAgeBlocks.RED_PLANKS, "紅の板材");
         addBlock(RedAgeBlocks.RED_SLAB, "紅のハーフブロック");

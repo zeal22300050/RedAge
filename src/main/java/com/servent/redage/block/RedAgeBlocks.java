@@ -5,6 +5,7 @@ import com.servent.redage.block.custom.RedAgeLeavesBlock;
 import com.servent.redage.block.custom.RedAgeLogBLock;
 import com.servent.redage.block.custom.RedAgeStrippableLogBlock;
 import com.servent.redage.item.RedAgeItems;
+import com.servent.redage.worldgen.tree.RedTreeGrower;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
@@ -76,6 +77,8 @@ public class RedAgeBlocks {
     public static final RegistryObject<Block> RED_PRESSURE_PLATE = registerBlockItem("red_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
 
+    public static final RegistryObject<Block> RED_SAPLING = registerBlockItem("red_sapling",
+            () -> new SaplingBlock(new RedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
     private static <T extends Block> RegistryObject<T> registerBlockItem(String name, Supplier<T> supplier) {
         RegistryObject<T> block = BLOCKS.register(name, supplier);

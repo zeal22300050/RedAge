@@ -26,6 +26,7 @@ public class ENUSLanguageProvider extends LanguageProvider {
         addBlock(RedAgeBlocks.RED_LOG, "Red Log");
         addBlock(RedAgeBlocks.RED_WOOD, "Red Wood");
         addBlock(RedAgeBlocks.RED_LEAVES, "Red Leaves");
+        addBlock(RedAgeBlocks.RED_SAPLING, "Red Sapling");
 
         addBlock(RedAgeBlocks.RED_PLANKS, "Red Planks");
         addBlock(RedAgeBlocks.RED_SLAB, "Red Slab");
