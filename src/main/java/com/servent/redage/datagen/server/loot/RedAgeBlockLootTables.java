@@ -25,6 +25,17 @@ public class RedAgeBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(RedAgeBlocks.RED_WOOD.get());
         this.dropSelf(RedAgeBlocks.STRIPPED_RED_LOG.get());
         this.dropSelf(RedAgeBlocks.STRIPPED_RED_WOOD.get());
+
+        this.dropSelf(RedAgeBlocks.RED_PLANKS.get());
+        this.dropSelf(RedAgeBlocks.RED_STAIRS.get());
+        this.dropSelf(RedAgeBlocks.RED_FENCE.get());
+        this.dropSelf(RedAgeBlocks.RED_FENCE_GATE.get());
+        this.dropSelf(RedAgeBlocks.RED_TRAPDOOR.get());
+        this.dropSelf(RedAgeBlocks.RED_BUTTON.get());
+        this.dropSelf(RedAgeBlocks.RED_PRESSURE_PLATE.get());
+        this.add(RedAgeBlocks.RED_SLAB.get(), createSlabItemTable(RedAgeBlocks.RED_SLAB.get()));
+        this.add(RedAgeBlocks.RED_DOOR.get(), createDoorTable(RedAgeBlocks.RED_DOOR.get()));
+
         // あとから苗木に変更予定
         this.add(RedAgeBlocks.RED_LEAVES.get(), block -> createLeavesDrops(block, RedAgeBlocks.ZINC_BLOCK.get(), NORMAL_LEAVES_SAPLING_CHANCES));
     }

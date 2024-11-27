@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "redage:block/red_slab"
+    },
+    "type=double": {
+      "model": "redage:block/red_planks"
+    },
+    "type=top": {
+      "model": "redage:block/red_slab_top"
+    }
+  }
+}

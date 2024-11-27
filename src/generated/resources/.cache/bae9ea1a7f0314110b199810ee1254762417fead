@@ -1,7 +1,16 @@
-// 1.20.2	2024-11-27T13:38:20.7999273	Tags for minecraft:block mod id redage
+// 1.20.2	2024-11-27T14:54:59.0851165	Tags for minecraft:block mod id redage
+db78ebcb8a551c5b97f8459ce3483b7c6408780a data/minecraft/tags/blocks/buttons.json
+bc35c6515b2991e5378cd2ccdac3f92d87522cbd data/minecraft/tags/blocks/doors.json
+6b8cdd73db425733182e0f425dea7c61f00db1c8 data/minecraft/tags/blocks/fences.json
+ae93504397738672ef80dff34a122f78f5770fbd data/minecraft/tags/blocks/fence_gates.json
 7d8f156de4bb01364be0949214baccec94f10a90 data/minecraft/tags/blocks/leaves.json
 97ff0c5064b03e3dcdb090a7d67e57e276912873 data/minecraft/tags/blocks/logs.json
 acaab0450c469927005180361ab3ad2edec85fec data/minecraft/tags/blocks/logs_that_burn.json
 1029c5824cfcdbb0f8b728cd89f4a2ffb5d0118c data/minecraft/tags/blocks/mineable/pickaxe.json
 1029c5824cfcdbb0f8b728cd89f4a2ffb5d0118c data/minecraft/tags/blocks/needs_iron_tool.json
+df2f840f72859d5e942328f45a08781aaef1fb2b data/minecraft/tags/blocks/planks.json
+3f784c908bca9981cc2f7f04f92bdc6d6964cc5f data/minecraft/tags/blocks/pressure_plates.json
+1e377f2781e6bf946bd9572418e7dce664830c41 data/minecraft/tags/blocks/slabs.json
+ccd49269a6bde09a854b5875522c5674ce0fec0f data/minecraft/tags/blocks/stairs.json
+72c230b9883a03924f4f1ee75bf8472856a49bf5 data/minecraft/tags/blocks/trapdoors.json
 acaab0450c469927005180361ab3ad2edec85fec data/redage/tags/blocks/red_log.json

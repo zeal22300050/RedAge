@@ -26,6 +26,17 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addBlock(RedAgeBlocks.RED_LOG, "紅の原木");
         addBlock(RedAgeBlocks.RED_WOOD, "紅の木");
         addBlock(RedAgeBlocks.RED_LEAVES, "紅の葉");
+
+        addBlock(RedAgeBlocks.RED_PLANKS, "紅の板材");
+        addBlock(RedAgeBlocks.RED_SLAB, "紅のハーフブロック");
+        addBlock(RedAgeBlocks.RED_STAIRS, "紅の階段");
+        addBlock(RedAgeBlocks.RED_FENCE, "紅のフェンス");
+        addBlock(RedAgeBlocks.RED_FENCE_GATE, "紅のフェンスゲート");
+        addBlock(RedAgeBlocks.RED_DOOR, "紅のドア");
+        addBlock(RedAgeBlocks.RED_TRAPDOOR, "紅のトラップドア");
+        addBlock(RedAgeBlocks.RED_BUTTON, "紅のボタン");
+        addBlock(RedAgeBlocks.RED_PRESSURE_PLATE, "紅の感圧板");
+
         add("creativetabs.redage_tab", "RedAge");
     }
 }

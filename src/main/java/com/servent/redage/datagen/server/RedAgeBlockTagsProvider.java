@@ -50,5 +50,15 @@ public class RedAgeBlockTagsProvider extends BlockTagsProvider {
 
         this.tag(BlockTags.LEAVES)
                 .add(RedAgeBlocks.RED_LEAVES.get());
+
+        this.tag(BlockTags.PLANKS).add(RedAgeBlocks.RED_PLANKS.get());
+        this.tag(BlockTags.SLABS).add(RedAgeBlocks.RED_SLAB.get());
+        this.tag(BlockTags.STAIRS).add(RedAgeBlocks.RED_STAIRS.get());
+        this.tag(BlockTags.FENCES).add(RedAgeBlocks.RED_FENCE.get());
+        this.tag(BlockTags.FENCE_GATES).add(RedAgeBlocks.RED_FENCE_GATE.get());
+        this.tag(BlockTags.DOORS).add(RedAgeBlocks.RED_DOOR.get());
+        this.tag(BlockTags.TRAPDOORS).add(RedAgeBlocks.RED_TRAPDOOR.get());
+        this.tag(BlockTags.BUTTONS).add(RedAgeBlocks.RED_BUTTON.get());
+        this.tag(BlockTags.PRESSURE_PLATES).add(RedAgeBlocks.RED_PRESSURE_PLATE.get());
     }
 }

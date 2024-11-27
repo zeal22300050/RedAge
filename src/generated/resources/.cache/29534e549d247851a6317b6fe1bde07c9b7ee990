@@ -1,5 +1,6 @@
-// 1.20.2	2024-11-27T13:38:20.8009463	Tags for minecraft:item mod id redage
+// 1.20.2	2024-11-27T14:54:59.0941482	Tags for minecraft:item mod id redage
 7d8f156de4bb01364be0949214baccec94f10a90 data/minecraft/tags/items/leaves.json
 97ff0c5064b03e3dcdb090a7d67e57e276912873 data/minecraft/tags/items/logs.json
 acaab0450c469927005180361ab3ad2edec85fec data/minecraft/tags/items/logs_that_burn.json
+df2f840f72859d5e942328f45a08781aaef1fb2b data/minecraft/tags/items/planks.json
 acaab0450c469927005180361ab3ad2edec85fec data/redage/tags/items/red_log.json

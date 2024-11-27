@@ -3,6 +3,8 @@ package com.servent.redage.datagen.server;
 import com.servent.redage.RedAge;
 import com.servent.redage.block.RedAgeBlocks;
 import com.servent.redage.item.RedAgeItems;
+import com.servent.redage.item.RedAgeTabs;
+import com.servent.redage.tag.RedAgeTags;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
@@ -32,6 +34,16 @@ public class RedAgeRecipeProvider extends RecipeProvider {
 
         woodFromLogs(pRecipeOutput, RedAgeBlocks.RED_WOOD.get(), RedAgeBlocks.RED_LOG.get());
         woodFromLogs(pRecipeOutput, RedAgeBlocks.STRIPPED_RED_WOOD.get(), RedAgeBlocks.STRIPPED_RED_LOG.get());
+
+        planksFromLog(pRecipeOutput, RedAgeBlocks.RED_PLANKS.get(), RedAgeTags.Items.RED_LOG, 4);
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, RedAgeBlocks.RED_SLAB.get(), RedAgeBlocks.RED_PLANKS.get());
+        stairs(pRecipeOutput, RedAgeBlocks.RED_STAIRS.get(), RedAgeBlocks.RED_PLANKS.get());
+        fence(pRecipeOutput, RedAgeBlocks.RED_FENCE.get(), RedAgeBlocks.RED_PLANKS.get());
+        fenceGate(pRecipeOutput, RedAgeBlocks.RED_FENCE_GATE.get(), RedAgeBlocks.RED_PLANKS.get());
+        door(pRecipeOutput, RedAgeBlocks.RED_DOOR.get(), RedAgeBlocks.RED_PLANKS.get());
+        trapdoor(pRecipeOutput, RedAgeBlocks.RED_TRAPDOOR.get(), RedAgeBlocks.RED_PLANKS.get());
+        button(pRecipeOutput, RedAgeBlocks.RED_BUTTON.get(), RedAgeBlocks.RED_PLANKS.get());
+        pressurePlate(pRecipeOutput, RedAgeBlocks.RED_PRESSURE_PLATE.get(), RedAgeBlocks.RED_PLANKS.get());
     }
 
     protected static void oreSmelting(RecipeOutput pRecipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup) {
@@ -59,4 +71,36 @@ public class RedAgeRecipeProvider extends RecipeProvider {
         ShapedRecipeBuilder.shaped(pPackedCategory, pPacked).define('#', pUnpacked).pattern("###").pattern("###").pattern("###").unlockedBy(getHasName(pUnpacked), has(pUnpacked)).save(pRecipeOutput);
     }
 
+    private static void stairs(RecipeOutput pRecipeOutput, ItemLike pResult, ItemLike pIngredient) {
+        stairBuilder(pResult, Ingredient.of(pIngredient))
+                .unlockedBy(getHasName(pIngredient), has(pIngredient))
+                .save(pRecipeOutput);
+    }
+    private static void fence(RecipeOutput pRecipeOutput, ItemLike pResult, ItemLike pIngredient) {
+        fenceBuilder(pResult, Ingredient.of(pIngredient))
+                .unlockedBy(getHasName(pIngredient), has(pIngredient))
+                .save(pRecipeOutput);
+    }
+    private static void fenceGate(RecipeOutput pRecipeOutput, ItemLike pResult,
+                                  ItemLike pIngredient) {
+        fenceGateBuilder(pResult, Ingredient.of(pIngredient))
+                .unlockedBy(getHasName(pIngredient), has(pIngredient))
+                .save(pRecipeOutput);
+    }
+    private static void door(RecipeOutput pRecipeOutput, ItemLike pResult, ItemLike pIngredient) {
+        doorBuilder(pResult, Ingredient.of(pIngredient))
+                .unlockedBy(getHasName(pIngredient), has(pIngredient))
+                .save(pRecipeOutput);
+    }
+    private static void trapdoor(RecipeOutput pRecipeOutput, ItemLike pResult,
+                                 ItemLike pIngredient) {
+        trapdoorBuilder(pResult, Ingredient.of(pIngredient))
+                .unlockedBy(getHasName(pIngredient), has(pIngredient))
+                .save(pRecipeOutput);
+    }
+    private static void button(RecipeOutput pRecipeOutput, ItemLike pResult, ItemLike pIngredient) {
+        buttonBuilder(pResult, Ingredient.of(pIngredient))
+                .unlockedBy(getHasName(pIngredient), has(pIngredient))
+                .save(pRecipeOutput);
+    }
 }
