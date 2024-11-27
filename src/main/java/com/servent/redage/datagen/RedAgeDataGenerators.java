@@ -5,10 +5,7 @@ import com.servent.redage.datagen.client.ENUSLanguageProvider;
 import com.servent.redage.datagen.client.JAJPLanguageProvider;
 import com.servent.redage.datagen.client.RedAgeBlockStateProvider;
 import com.servent.redage.datagen.client.RedAgeItemModelProvider;
-import com.servent.redage.datagen.server.RedAgeBlockTagsProvider;
-import com.servent.redage.datagen.server.RedAgeGlobalLootModifierProvider;
-import com.servent.redage.datagen.server.RedAgeRecipeProvider;
-import com.servent.redage.datagen.server.RedAgeWorldGenProvider;
+import com.servent.redage.datagen.server.*;
 import com.servent.redage.datagen.server.loot.RedAgeLootTables;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
@@ -44,8 +41,11 @@ public class RedAgeDataGenerators {
         // ルートテーブル
         generator.addProvider(event.includeServer(), RedAgeLootTables.create(packOutput));
 
-        // タグ
-        generator.addProvider(event.includeServer(), new RedAgeBlockTagsProvider(packOutput, lookUpProvider, existingFileHelper));
+        // ブロックタグ
+        var blockTagsProvider = generator.addProvider(event.includeServer(), new RedAgeBlockTagsProvider(packOutput, lookUpProvider, existingFileHelper));
+
+        // アイテムタグ
+        var itemTagsProvider = generator.addProvider(event.includeServer(), new RedAgeItemTagsProvider(packOutput, lookUpProvider, blockTagsProvider.contentsGetter(), existingFileHelper));
 
         // GlobalLootModifier
         generator.addProvider(event.includeServer(), new RedAgeGlobalLootModifierProvider(packOutput));
