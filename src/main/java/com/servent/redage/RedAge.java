@@ -2,6 +2,7 @@ package com.servent.redage;
 
 import com.mojang.logging.LogUtils;
 import com.servent.redage.block.RedAgeBlocks;
+import com.servent.redage.enitity.RedAgeEntities;
 import com.servent.redage.item.RedAgeItems;
 import com.servent.redage.item.RedAgeTabs;
 import com.servent.redage.loot.RedAgeLootModifiers;
@@ -37,6 +38,8 @@ public class RedAge {
         RedAgeBlocks.register(modEventBus);
         // GlobalLootModifierを登録
         RedAgeLootModifiers.register(modEventBus);
+        // エンティティの登録
+        RedAgeEntities.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
 

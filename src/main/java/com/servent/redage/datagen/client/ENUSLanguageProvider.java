@@ -2,6 +2,7 @@ package com.servent.redage.datagen.client;
 
 import com.servent.redage.RedAge;
 import com.servent.redage.block.RedAgeBlocks;
+import com.servent.redage.enitity.RedAgeEntities;
 import com.servent.redage.item.RedAgeItems;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -37,6 +38,9 @@ public class ENUSLanguageProvider extends LanguageProvider {
         addBlock(RedAgeBlocks.RED_TRAPDOOR, "Red Trapdoor");
         addBlock(RedAgeBlocks.RED_BUTTON, "Red Button");
         addBlock(RedAgeBlocks.RED_PRESSURE_PLATE, "Red Pressure Plate");
+
+        addEntityType(RedAgeEntities.RED_SLIME, "Red Slime");
+
         add("creativetabs.redage_tab", "RedAge");
     }
 }

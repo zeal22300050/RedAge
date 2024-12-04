@@ -2,6 +2,7 @@ package com.servent.redage.datagen.client;
 
 import com.servent.redage.RedAge;
 import com.servent.redage.block.RedAgeBlocks;
+import com.servent.redage.enitity.RedAgeEntities;
 import com.servent.redage.item.RedAgeItems;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.LanguageProvider;
@@ -37,6 +38,8 @@ public class JAJPLanguageProvider extends LanguageProvider {
         addBlock(RedAgeBlocks.RED_TRAPDOOR, "紅のトラップドア");
         addBlock(RedAgeBlocks.RED_BUTTON, "紅のボタン");
         addBlock(RedAgeBlocks.RED_PRESSURE_PLATE, "紅の感圧板");
+
+        addEntityType(RedAgeEntities.RED_SLIME, "紅スライム");
 
         add("creativetabs.redage_tab", "RedAge");
     }
