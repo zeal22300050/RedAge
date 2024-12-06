@@ -18,6 +18,8 @@ public class ENUSLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         addItem(RedAgeItems.RAW_ZINC, "Raw Zinc");
         addItem(RedAgeItems.ZINC_INGOT, "Zinc Ingot");
+        addItem(RedAgeItems.RED_SLIME_SPAWN_EGG, "Red Slime Spawn Egg");
+
         addBlock(RedAgeBlocks.RAW_ZINC_BLOCK, "Raw Zinc Block");
         addBlock(RedAgeBlocks.ZINC_BLOCK, "Zinc Block");
         addBlock(RedAgeBlocks.ZINC_ORE, "Zinc Ore");

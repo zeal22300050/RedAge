@@ -18,6 +18,8 @@ public class JAJPLanguageProvider extends LanguageProvider {
     protected void addTranslations() {
         addItem(RedAgeItems.RAW_ZINC, "亜鉛原石");
         addItem(RedAgeItems.ZINC_INGOT, "亜鉛インゴット");
+        addItem(RedAgeItems.RED_SLIME_SPAWN_EGG, "紅スライムのスポーンエッグ");
+
         addBlock(RedAgeBlocks.RAW_ZINC_BLOCK, "亜鉛原石ブロック");
         addBlock(RedAgeBlocks.ZINC_BLOCK, "亜鉛ブロック");
         addBlock(RedAgeBlocks.ZINC_ORE, "亜鉛鉱石");

@@ -38,6 +38,7 @@ public class RedAgeTabs {
                         output.accept(RedAgeBlocks.RED_BUTTON.get());
                         output.accept(RedAgeBlocks.RED_PRESSURE_PLATE.get());
                         output.accept(RedAgeBlocks.RED_SAPLING.get());
+                        output.accept(RedAgeItems.RED_SLIME_SPAWN_EGG.get());
                     })
                     .build());
 

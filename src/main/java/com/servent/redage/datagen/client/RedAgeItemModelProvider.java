@@ -32,6 +32,8 @@ public class RedAgeItemModelProvider extends ItemModelProvider {
         fence(RedAgeBlocks.RED_FENCE, RedAgeBlocks.RED_PLANKS);
         button(RedAgeBlocks.RED_BUTTON, RedAgeBlocks.RED_PLANKS);
         sapling(RedAgeBlocks.RED_SAPLING);
+
+        withExistingParent(RedAgeItems.RED_SLIME_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     public void itemWithBlock(RegistryObject<Block> block) {
