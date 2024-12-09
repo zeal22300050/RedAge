@@ -12,6 +12,9 @@ public class RedAgeLootTables {
         return new LootTableProvider(output, Set.of(), List.of(
                 new LootTableProvider.SubProviderEntry(
                         RedAgeBlockLootTables::new, LootContextParamSets.BLOCK
+                ),
+                new LootTableProvider.SubProviderEntry(
+                        CustomEntityLootProvider::new, LootContextParamSets.ENTITY
                 )
         ));
     }
