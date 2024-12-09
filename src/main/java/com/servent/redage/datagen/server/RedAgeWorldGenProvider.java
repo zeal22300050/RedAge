@@ -2,6 +2,7 @@ package com.servent.redage.datagen.server;
 
 import com.servent.redage.RedAge;
 import com.servent.redage.worldgen.biome.RedAgeBiomeModifiers;
+import com.servent.redage.worldgen.biome.RedAgeBiomes;
 import com.servent.redage.worldgen.features.RedAgeFeatures;
 import com.servent.redage.worldgen.placement.RedAgePlacement;
 import net.minecraft.core.HolderLookup;
@@ -18,7 +19,8 @@ public class RedAgeWorldGenProvider extends DatapackBuiltinEntriesProvider {
     private static final RegistrySetBuilder BUILDER = new RegistrySetBuilder()
             .add(Registries.CONFIGURED_FEATURE, RedAgeFeatures::bootstrap)
             .add(Registries.PLACED_FEATURE, RedAgePlacement::bootstrap)
-            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, RedAgeBiomeModifiers::bootstrap);
+            .add(ForgeRegistries.Keys.BIOME_MODIFIERS, RedAgeBiomeModifiers::bootstrap)
+            .add(Registries.BIOME, RedAgeBiomes::bootstrap);
 
     public RedAgeWorldGenProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(RedAge.MOD_ID));
