@@ -6,6 +6,9 @@ import com.servent.redage.enitity.RedAgeEntities;
 import com.servent.redage.item.RedAgeItems;
 import com.servent.redage.item.RedAgeTabs;
 import com.servent.redage.loot.RedAgeLootModifiers;
+import com.servent.redage.worldgen.biome.RedAgeOverworldRegion;
+import com.servent.redage.worldgen.biome.RedAgeSurfaceRuleData;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -19,6 +22,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import terrablender.api.Regions;
+import terrablender.api.SurfaceRuleManager;
 
 @Mod(RedAge.MOD_ID)
 public class RedAge {
@@ -48,6 +53,10 @@ public class RedAge {
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
+        event.enqueueWork(() -> {
+            Regions.register(new RedAgeOverworldRegion(new ResourceLocation(RedAge.MOD_ID, "overworld"), 5));
+            SurfaceRuleManager.addSurfaceRules(SurfaceRuleManager.RuleCategory.OVERWORLD, MOD_ID, RedAgeSurfaceRuleData.makeRules());
+        });
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
